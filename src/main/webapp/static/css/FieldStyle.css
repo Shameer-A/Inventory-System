@@ -1,0 +1,331 @@
+.form{
+	width:40%;
+	height:410px;
+	float: right;
+	padding-top: 30px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: left;
+	background-color:aqua;
+}
+
+a, abbr, acronym, address, big, blockquote, body, button, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, thead, th, tbody, tr, td, tfoot, tt, u, ul, var {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font-family: inherit;
+	font-weight:normal;
+	font-style: normal;
+	vertical-align: top;
+	white-space: normal;
+	text-align: left;
+	background-color: transparent;
+	color: black;
+}
+:focus {
+	outline: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+ins {
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+
+textarea, input[type='text'],
+input[type='password'],
+select {
+	font-family: inherit;
+	font-size: inherit;
+	//border: 1px solid #bfbfbf;
+	background: #fff;
+}
+textarea:hover,
+input[type='text']:hover,
+input[type='password']:hover,
+select:hover {
+	border-color: #aaa;
+}
+textarea:focus,
+input[type='text']:focus,
+input[type='checkbox']:focus,
+input[type='submit']:focus,
+input[type='password']:focus, 
+input[type='file']:focus,
+input[type='radio']:focus,
+select:focus {
+	outline: 1px solid #707070;
+	border-color: #888;
+}
+a:focus,
+input[type='submit'].additionalLink:focus {
+	outline: 2px dotted #00679e;
+}
+hr {
+	display: block;
+	background: #ccc;
+	color: #999;
+	width: 100%;
+	height: 1px;
+	border: none;
+}
+.clear {
+	clear:both;
+}
+h2.security{
+	 background: url(../images/icons/Locked.png) no-repeat left center;
+	 padding-left: 20px;
+	 padding-top: 5px;
+     text-align: left;
+     font-size:30px;
+     border-bottom: 1px dotted #D1CECE;
+     height: 40px;
+}
+div.column {
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+	width: 750px;
+	margin-bottom: 5px;
+}
+
+div.column.twoColumn {
+	clear: none;
+	width: 355px;
+	padding-left: 100px;
+	padding-top: 25px;
+	margin-bottom: 5px;
+	float: left;
+}
+
+html[dir="rtl"] div.column.twoColumn {
+	width: 355px;
+	padding-left: 0px;
+	padding-right: 5px;
+	float: right;
+}
+
+div.column.threeColumn {
+	clear: none;
+	width: 225px;
+	padding-left: 5px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	float: left;
+}
+
+html[dir="rtl"] div.column.threeColumn {
+	width: 225px;
+	padding-left: 0;
+	padding-right: 5px;
+	float: right;
+}
+
+div.input {
+	padding-left: 10px;
+	margin: 0px;
+	clear: both;
+	display: block;
+	text-align: left;
+	margin-bottom: 4px;
+	width: 750px;
+}
+
+div.column.twoColumn div.input {
+	width: 355px;
+}
+
+div.column.threeColumn div.input {
+	width: 225px;
+}
+.label label{
+	clear: both;
+	float: left;
+	text-align: left;
+	display: block;
+	font-weight: bold;
+	color: #444444;
+	border-bottom: 1px dotted black;
+	margin-left: 5px;
+	margin-top: 4px;
+	width: 155px;
+	padding: 1px 2px 1px 2px;
+}
+span.currency, #popupContent span.currency {
+	margin-top: 5px;
+	vertical-align: middle;
+}
+html[dir="rtl"] span.currency, 
+html[dir="rtl"] span.currency {
+	float: right;
+}
+
+div.input div.text, #popupContent div.input div.text div.password {
+	padding: 5px 5px 6px 5px;
+	overflow: hidden;
+}
+
+div.column div.input div.text div.password, #popupContent div.column div.input div.text div.password{
+	width: 575px;
+	overflow: auto;
+}
+
+div.twoColumn div.input div.text, #popupContent div.twoColumn div.input div.text {
+	width: 180px;
+	overflow: auto;
+}
+
+div.threeColumn div.input div.text, #popupContent div.threeColumn div.input div.text {
+	width: 115px;
+	overflow: auto;
+}
+html[dir="rtl"] div.input input.file,
+html[dir="rtl"] div.input select,
+html[dir="rtl"] div.input textarea,
+html[dir="rtl"] div.input input {
+	float: right;
+}
+div.input input.submit {
+	border: 0px;
+	clear: both;
+	left: 0px;
+}
+div.input select {
+	width: 180px;
+	margin-top: 1px;
+}
+div.input div.group {
+	float: left;
+	margin: 3px 3px 8px 3px;
+	width: 179px;
+}
+ div.input div.group label {
+	clear: none;
+	float: none;
+	font-weight: normal;
+	border-bottom: 0px;
+	margin: 0px;
+	padding: 0px;
+	color: #444444;
+	float: left;
+	margin-top: 4px;
+	width: 153px;
+}
+.input input {
+	border: 1px solid #bfbfbf;
+	margin-bottom: 5px;
+	width: 190px;
+	padding: 1px 2px 1px 2px;
+}
+
+div.column.buffer {
+    height: 10px;
+}
+
+div.column.largebuffer {
+    height: 20px;
+}
+
+
+h2 .section {
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    text-align: left;
+    border-bottom: 1px dotted #D1CECE;
+    height: 25px;
+}
+.clear {
+    clear: both;
+}
+
+	
+div .submit {
+
+	width: 80px;
+	height: 18px;
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	font-weight: bold;
+	color: black;
+	border: 0px;
+	vertical-align: middle;
+	margin-left:120px;
+}
+.loginForm{
+	width:80%;
+	height:200px;
+	//float: left;
+	padding-top: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	background-color:aqua;
+	border: 2px solid blue;
+	border-radius: 5px;
+	border-style: outset;
+	margin-left:auto;
+	margin-right:auto;
+}
+.registrationForm{
+	background-color:silver;
+	border: 2px solid blue;
+	border-radius: 5px;
+	padding:10px;
+	border-style: outset;
+	margin-left:auto;
+	margin-right:auto;
+}
+h2.user{
+	 background: url(../images/icons/user.png) no-repeat left center;
+	 padding-left: 20px;
+	 padding-top: 5px;
+     text-align: left;
+     font-size:40px;
+     border-bottom: 1px dotted #D1CECE;
+     height: 40px;
+     color:white;
+}
+h4.user_info{
+	 background: url(../images/icons/person.png) no-repeat left center;
+	 padding-left: 20px;
+	 padding-top: 5px;
+     text-align: left;
+     font-size:20px;
+     border-bottom: 1px dotted #D1CECE;
+     height: 20px;
+     color:white;
+}
+h4.address_info{
+	 background: url(../images/icons/contact.png) no-repeat left center;
+	 padding-left: 20px;
+	 padding-top: 5px;
+     text-align: left;
+     font-size:20px;
+     border-bottom: 1px dotted #D1CECE;
+     height: 20px;
+     color:white;
+}
+h4.roles_info{
+	 background: url(../images/icons/roles.png) no-repeat left center;
+	 padding-left: 20px;
+	 padding-top: 5px;
+     text-align: left;
+     font-size:20px;
+     border-bottom: 1px dotted #D1CECE;
+     height: 20px;
+     color:white;
+}

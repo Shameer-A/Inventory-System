@@ -1,0 +1,50 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:sec="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/security
+http://www.springframework.org/schema/security/spring-security-3.1.xsd
+http://www.springframework.org/schema/mvc
+http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ 
+ 
+ 	<import resource="dao-config.xml"/>
+ 	
+	<context:component-scan base-package="com.java.sasha.inventory.config" />
+ 	
+ 	<mvc:annotation-driven/>
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/views/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+	
+	<mvc:resources mapping="/static/**" location="/static/" />
+	
+	<!-- Dao bean Impl -->
+	<bean id="customSf" class="com.java.sasha.inventory.dao.impl.CustomSessionFactory" ></bean>
+	<bean id="rolesDao" class="com.java.sasha.inventory.dao.impl.RolesDaoImpl"></bean>
+	<bean id="userDao" class="com.java.sasha.inventory.dao.impl.UserDaoImpl"></bean>
+	
+	<!-- Logic Impl -->
+	<bean id="userLogic" class="com.java.sasha.inventory.logic.impl.UserLogic"></bean>
+	
+	<!-- Communication Impl -->
+	<bean id="userCommunication" class="com.java.sasha.inventory.communication.impl.UserCommunication"></bean>
+	
+	<!-- Utils -->
+	<bean id="converter" class="com.java.sasha.inventory.utils.Converter"></bean>
+	
+	
+	
+</beans>
